@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Gilroy ☞';
+}
+
+.bigtext{
+    color: transparent;
+    background-image: linear-gradient(to left,#2ecc71,#3498db, #9b59b6,#ffae00);
+    background-size: 500%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animate 20s ease infinite;
+}
+
+.bottomColor{
+    background-image: linear-gradient(to left,#2ecc71,#3498db, #9b59b6,#ffae00);
+    background-size: 500%;
+    animation: animate 20s ease infinite;
+}
+.footer{
+    background-color: rgba(152,174,225,0.55)
+}
+.buttons:hover{
+    background: rgba(20, 31, 61, 0.9);
+    color: white;
+}
+
+.card{
+    background: rgba(20, 31, 61, 0.9);
+}
+@keyframes animate {
+    0%{
+        background-position: 100% 0%;
+    }
+    50%{
+        background-position: 0 100%;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
